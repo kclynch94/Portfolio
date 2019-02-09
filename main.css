@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: "Open Sans",
+    sans-serif; 
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+}
+  
+nav,
+footer {
+    padding: 1% 0;
+} 
+
+.fade {
+    transition: .5s;
+}
+
+.background {
+    background-color: black;  
+}
+
+  
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+ }
+  
+  
+  
+header {
+    padding: 12% 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+  
+section {
+    display: block;
+    min-height: 200px;
+}
+
+.projects,
+.technologiesUsed {
+    background-color: white;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.header .menu li {
+    float: left;
+    margin-right: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#bio p {
+    padding-left: 50px;
+}
+
+.technologiesUsed {
+    display: block;
+    clear: left;
+    padding-top: 10px;
+}
+.technologiesUsed img {
+    width: 50px;
+    height: 50px;
+}
+
+.projectScreenshot {
+    padding: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.projectInfo {
+    text-decoration: none;
+    display: block;
+    float: left;
+    padding-left: 50px;
+}
+
+.projectInfo a{
+    text-decoration: none;
+    color: black;
+}
+
+.cursor {
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    height: 60px;
+    animation: 
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+
+
