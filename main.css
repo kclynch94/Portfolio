@@ -3,11 +3,32 @@
   }
   
 body {
-    font-family: "Open Sans",
-    sans-serif; 
     font-size: 20px;
     color: #444;
     line-height: 1.5;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/273/835/large_2x/vector-white-background.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+     background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+}
+
+.name {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif; 
+    padding: 1%;
 }
   
 nav,
@@ -48,11 +69,6 @@ section {
     min-height: 200px;
 }
 
-.projects,
-.technologiesUsed {
-    background-color: white;
-}
-
 ul, menu, dir {
     display: block;
     list-style-type: none;
@@ -73,6 +89,7 @@ ul, menu, dir {
 
 .header .menu li a {
     text-decoration: none;
+    font-family: 'Cabin', sans-serif;
     color: black;
 }
 
@@ -101,11 +118,14 @@ ul, menu, dir {
     display: block;
     float: left;
     padding-left: 50px;
+    color: black;
 }
 
 .projectInfo a{
     text-decoration: none;
-    color: black;
+    color: blue;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 25px;
 }
 
 .cursor {
