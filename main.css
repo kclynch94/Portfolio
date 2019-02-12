@@ -150,5 +150,30 @@ ul, menu, dir {
     50% { border-color: black; }
   }
 
+  @media only screen and (max-width: 600px) {
+    h1 {
+        font-size:30px;
+    }
 
+    h2 {
+        font-size:20px;
+    }
+
+    .name {
+        font-size: 25px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    p {
+        font-size:15px;
+    }
+
+    .projectInfo a{
+        text-decoration: none;
+        color: blue;
+        font-family: 'Source Sans Pro', sans-serif; 
+        font-size: 20px;
+    }
+  }
+  
 
