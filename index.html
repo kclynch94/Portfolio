@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Source+Sans+Pro|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav role="navigation" class="fade">
+    <header class="top-nav">
+        <a href="#main-menu"
+           id="main-menu-toggle"
+           class="menu-toggle"
+           aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <a href="#main-menu-toggle"
+             id="main-menu-close"
+             class="menu-close"
+             aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </a>
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle"
+           class="backdrop"
+           tabindex="-1"
+           aria-hidden="true" hidden></a>
+    </header>
+    <!-- <nav role="navigation" class="fade">
         <div class="header">
             <ul class="menu">
-                <li><a class="nav-main" href="file:///C:/Users/Kevin%20Lynch/thinkfulProjects/portfolio/index.html"><span class="appname">Kevin Lynch</span></a>
+                <li><a class="nav-main" href="#"><span class="appname">Kevin Lynch</span></a>
                 <li><a class="nav-docs" href="#bio">Bio</a>
                 <li><a href="#projects">Projects</a>
-                <li><a class="github" href="https://github.com/kclynch94">GitHub</a>
-                <li><a class="linkedin" href="https://www.linkedin.com/in/kevin-lynch-2b1085136/">LinkedIn</a>
+                <li><a href="#contact">Contact</a>
             </ul>
         </div>
-    </nav>
+    </nav> -->
     <main role="main">
-        <header role="banner">
+        <header class="flex_center" role="banner">
             <h2 class="name">Hi, I'm Kevin Lynch</h2>
             <div>
                 <h1 id="typewriter" class="cursor"></h1>
@@ -40,56 +68,56 @@
 
         <section id="projects" class="projects">
             <h2>Projects</h2>
-            <img class="projectScreenshot" src="Images/Fortnite-Quiz-App-Screenshot.png" />
+            <img alt="Fortnite Quiz Game" class="projectScreenshot" src="Images/Fortnite-Quiz-App-Screenshot.png" />
             <section class="projectInfo">
-                <a href="https://kclynch94.github.io/fortnite-quizz-app/" class="projectName">Fortnite Quiz App</a>
+                <a href="https://kclynch94.github.io/fortnite-quizz-app/" class="projectName" target="_blank">Fortnite Quiz App</a>
                 <div class="technologiesUsed">
-                    <img src="Images/HTML-Logo2.png" />
-                    <img src="Images/CSS-Logo2.png" />
-                    <img src="Images/JSLogo.png" />
-                    <img src="Images/jQuery-Logo.png" />
+                    <img alt="HTML logo" src="Images/HTML-Logo2.png" />
+                    <img alt="CSS logo" src="Images/CSS-Logo2.png" />
+                    <img alt="JavaScript logo" src="Images/JSLogo.png" />
+                    <img alt="JQuery logo" src="Images/jQuery-Logo.png" />
                 </div>
                 <div class="projectDescription">
-                    <p>This application is a 10 question quiz to test your knowlegde of Fortnite.</p>
+                    <p>This application is a 10 question quiz to test your knowledge of Fortnite.</p>
                 </div>
-                <a href="https://github.com/kclynch94/fortnite-quizz-app" class="repoLink">Github Repo</a>
+                <a href="https://github.com/kclynch94/fortnite-quizz-app" target="_blank" class="repoLink">Github Repo</a>
             </section>
-            <img class="projectScreenshot" src="Images/NBA_Scoreboard_Home.png" />
+            <img alt="NBA Scoreboard App" class="projectScreenshot" src="Images/NBA_Scoreboard_Home.png" />
             <section class="projectInfo">
-                <a href="https://kclynch94.github.io/NBA-Scoreboard/" class="projectName">NBA Scoreboard</a>
+                <a href="https://kclynch94.github.io/NBA-Scoreboard/" class="projectName" target="_blank">NBA Scoreboard</a>
                 <div class="technologiesUsed">
-                    <img src="Images/HTML-Logo2.png" />
-                    <img src="Images/CSS-Logo2.png" />
-                    <img src="Images/JSLogo.png" />
-                    <img src="Images/jQuery-Logo.png" />
+                    <img alt="HTML logo" src="Images/HTML-Logo2.png" />
+                    <img alt="CSS logo" src="Images/CSS-Logo2.png" />
+                    <img alt="JavaScript logo" src="Images/JSLogo.png" />
+                    <img alt="JQuery logo" src="Images/jQuery-Logo.png" />
                 </div>
                 <div class="projectDescription">
                     <p>This app can be used to check on NBA games and scores. The home page display the scores of any live games, as well as, all completed games from the last day that games were played. The user may then enter a team, a date, or both to filter their view. Team searches will return the details regarding the next 3 games that team plays and the final scores of the last 3 games they played. Date searches will return all games played on that date or game to be played, depending on if is is in the past or future. Searching both will show any games for the entered team on the specified date.</p>
                 </div>
-                <a href="https://github.com/kclynch94/NBA-Scoreboard" class="repoLink">Github Repo</a>
+                <a href="https://github.com/kclynch94/NBA-Scoreboard" class="repoLink" target="_blank">Github Repo</a>
             </section>
-            <img class="projectScreenshot" src="Images/WGN_user_interface.png" />
+            <img alt="Who's Got Next? App" class="projectScreenshot" src="Images/WGN_user_interface.png" />
             <section class="projectInfo">
-                <a href="https://kclynch94-whos-got-next-app.now.sh/" class="projectName">Who's Got Next?</a>
+                <a href="https://kclynch94-whos-got-next-app.now.sh/" class="projectName" target="_blank">Who's Got Next?</a>
                 <div class="technologiesUsed">
-                    <img src="Images/React.js_logo-512.png" />
-                    <img src="Images/nodejs-logo-png--435.png" />
-                    <img src="Images/1200px-Postgresql_elephant.svg.png" />
-                    <img src="Images/HTML-Logo2.png" />
-                    <img src="Images/CSS-Logo2.png" />
-                    <img src="Images/JSLogo.png" />
-                    <img src="Images/jQuery-Logo.png" />
+                    <img alt="React logo" src="Images/React.js_logo-512.png" />
+                    <img alt="Nodejs logo" src="Images/nodejs-logo-png--435.png" />
+                    <img alt="Postgresql logo" src="Images/1200px-Postgresql_elephant.svg.png" />
+                    <img alt="HTML logo" src="Images/HTML-Logo2.png" />
+                    <img alt="CSS logo" src="Images/CSS-Logo2.png" />
+                    <img alt="JavaScript logo" src="Images/JSLogo.png" />
+                    <img alt="jQuery logo" src="Images/jQuery-Logo.png" />
                 </div>
                 <div class="projectDescription">
                     <p>This app is designed to help local basketball players see what courts have active players. In addition to that, it solves the problem of debating 'Who's Got Next?' or what team is next in line to play on a certain court.</p>
                 </div>
-                <a href="https://github.com/kclynch94/whos-got-next-app" class="repoLink">Client Github Repo</a>
+                <a href="https://github.com/kclynch94/whos-got-next-app" class="repoLink" target="_blank">Client Github Repo</a>
                 <span>|</span>
-                <a href="https://github.com/kclynch94/whos-got-next-server" class="repoLink">Server Github Repo</a>
+                <a href="https://github.com/kclynch94/whos-got-next-server" class="repoLink" target="_blank">Server Github Repo</a>
             </section>
             <img class="projectScreenshot" src="Images/2019-12-27_1716.png" />
             <section class="projectInfo">
-                <a href="https://kclynch94-wedding-planner.now.sh/" class="projectName">Wedding Planner</a>
+                <a href="https://kclynch94-wedding-planner.now.sh/" class="projectName" target="_blank">Wedding Planner</a>
                 <div class="technologiesUsed">
                     <img src="Images/React.js_logo-512.png" />
                     <img src="Images/nodejs-logo-png--435.png" />
@@ -100,12 +128,21 @@
                     <img src="Images/jQuery-Logo.png" />
                 </div>
                 <div class="projectDescription">
-                    <p>This app is designed to help people plan there weddings. With tons of options out there for each piece of a wedding it be hard to pick the right one and even keep track of all the options. Wedding planner allows you to log your favorites and compare them.</p>
+                    <p>This app is designed to help people plan their weddings. With tons of options out there for each piece of a wedding it be hard to pick the right one and even keep track of all the options. Wedding planner allows you to log your favorites and compare them.</p>
                 </div>
-                <a href="https://github.com/kclynch94/wedding-planner" class="repoLink">Client Github Repo</a>
+                <a href="https://github.com/kclynch94/wedding-planner" class="repoLink" target="_blank">Client Github Repo</a>
                 <span>|</span>
-                <a href="https://github.com/kclynch94/wedding-planner-server" class="repoLink">Server Github Repo</a>
+                <a href="https://github.com/kclynch94/wedding-planner-server" class="repoLink" target="_blank">Server Github Repo</a>
             </section>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Info</h2>
+                <div class="margin-left">
+                    <a href="mailto:kclynch94@gmail.com">Email</a> </br>
+                    <a class="github" href="https://github.com/kclynch94" target="_blank">GitHub</a></br>
+                    <a class="linkedin" href="https://www.linkedin.com/in/kevin-lynch-2b1085136/" target="_blank">LinkedIn</a>
+                </div>
+                
         </section>
     </main>
     <footer role="content-info"></footer>

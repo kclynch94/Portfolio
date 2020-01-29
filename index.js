@@ -1,14 +1,20 @@
-$(function() {
-    $(window).scroll(function () {
-        if($(this).scrollTop()>10){
-            $('nav').addClass('background')
-            $('.header .menu li a').css('color', 'white')
-        } else {
-            $('nav').removeClass('background')
-            $('.header .menu li a').css('color', 'black')
-        }
-    })
-})
+// $(function() {
+//     $(window).scroll(function () {
+//         if($(this).scrollTop()>10){
+//             $('nav').addClass('background')
+//             $('.header .menu li a').css('color', 'white')
+//         } else {
+//             $('nav').removeClass('background')
+//             $('.header .menu li a').css('color', 'black')
+//         }
+//     })
+// })
+
+$(document).ready(function(){
+  $('#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
+});
 
 let i = 0;
 let index = 0;
